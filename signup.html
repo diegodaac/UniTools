@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniTools</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header-inner">
+    <nav class="transparent">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">UniTools</a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse">
+            <i class="fa fa-bars"></i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="QuienSomos.html">Quienes Somos?</a>
+            </li>
+            <li>
+              <a class="active-link" href="signup.html">Registrate</a>
+            </li>
+            <li>
+              <a href="#login-modal" class="btn purple modal-trigger">Login</a>
+            </li>
+            <li>
+              <a href="https://facebook.com">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="side-nav" id="mobile-nav">
+            <h4 class="purple-text text-darken-4 center">UniTools</h4>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li>
+              <a href="index.html">
+                <i class="fa fa-home grey-text text-darken-4"></i> Inicio</a>
+            </li>
+            <li>
+              <a href="QuienSomos.html">
+                <i class="fa fa-cog grey-text text-darken-4"></i> Quienes somos?</a>
+            </li>
+            <li>
+              <a href="signup.html">
+                <i class="fa fa-users grey-text text-darken-4"></i>Registrate</a>
+            </li>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li>
+              <a href="#" class="btn purple">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Showcase -->
+    <div class="showcase container">
+      <div class="row">
+        <div class="col s12 m10 offset-m1 center">
+          <h5>Bienvenido a UniTools</h5>
+          <h1>Crea una cuenta</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section: Signup -->
+  <section class="section section-signup">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <h4>Crea una cuenta gratuita</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus veniam id nisi? Saepe sint ipsum distinctio
+            molestiae, recusandae autem sequi?</p>
+          <h4>Descarga todo tipo de recursos</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus veniam id nisi? Saepe sint ipsum distinctio
+            molestiae, recusandae autem sequi?</p>
+          <h4>Comparte contenido</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus veniam id nisi? Saepe sint ipsum distinctio
+            molestiae, recusandae autem sequi?</p>
+        </div>
+        <div class="col s12 m6">
+          <div class="card-panel grey lighten-4 grey-text text-darken-4 z-depth-0">
+            <form>
+              <div class="input-field">
+                <input type="text" id="first_name">
+                <label for="first_name">Nombre</label>
+              </div>
+              <div class="input-field">
+                <input type="text" id="last_name">
+                <label for="last_name">Apellido</label>
+              </div>
+              <div class="input-field">
+                <input type="email" id="email">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                <input type="password" id="password">
+                <label for="password">Contraseña</label>
+              </div>
+              <div class="input-field">
+                <select id="semestre">
+                  <option value="" disabled selected>Selecciona tu semestre</option>
+                  <option value="1">Primero</option>
+                  <option value="2">Segundo</option>
+                  <option value="3">Tercero</option>
+                  <option value="4">Cuarto</option>
+                  <option value="5">Quinto</option>
+                  <option value="6">Sexto</option>
+                  <option value="7">Septimo</option>
+                  <option value="8">Octavo</option>
+                  <option value="9">Noveno</option>
+                </select>
+                <label for="semestre">Semestre</label>
+              </div>
+              <div class="input-field">
+                <select id="carrera">
+                  <option value="" disabled selected>Selecciona tu carrera</option>
+                  <option value="LLC">Ciencias Computacionales</option>
+                  <option value="LMAD">Multimedia y Animacion</option>
+                  <option value="LSTI">Seguridad en Tecnologias de la Informacion</option>
+                  <option value="LM">Matematicas</option>
+                  <option value="LF">Fisica</option>
+                  <option value="LA">Actuaria</option>
+                </select>
+                <label for="carrera">Carrera</label>
+              </div>
+              <input type="submit" value="Registrame" class="btn btn-large purple btn-extend">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="page-footer deep-purple lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Sobre nosotros</h5>
+          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ducimus, hic id quod enim voluptate </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-3" href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="QuienSomos.html">Mas Sobre Nosotros</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="signup.html">Registrate</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright deep-purple darken-1">
+      <div class="container">
+        UniTools &copy; 2023
+        <a class="grey-text text-lighten-4 right" href="#!">Terminos y Condiciones</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Login -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <h4>Ingresa a tu cuenta</h4>
+      <p>Ingresa a tu cuenta de UniTools</p>
+      <form>
+        <div class="input-field">
+          <input type="email" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password">
+          <label for="password">Contraseña</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close btn grey">
+        <i class="fa fa-sync"></i> ¿Olvidaste tu contraseña?</a>
+      <a href="./loged.html" class="modal-action modal-close btn purple">
+        <i class="fa fa-solid fa-user"></i>Ingresar</a>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.carousel.carousel-slider').carousel({ fullWidth: true });
+      $('.button-collapse').sideNav();
+      $('.modal').modal();
+      $('select').material_select();
+    });
+  </script>
+</body>
+
+</html>
