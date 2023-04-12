@@ -1,37 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!--Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/90264e9090.js" crossorigin="anonymous"></script>
+    <!--materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UniTools</title>
-</head>
+    <style>
+      .input-field {
+        margin-bottom: 30px;
+      }
+
+      .btn-space{
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
 <body>
-    <section class="section">
-        <div id="login-modal" class="modal">
-            <div class="modal-content">
-                <h4>Ingresa a tu cuenta</h4>
-                <p>Ingresa a tu cuenta de UniTools</p>
-                <form>
-                  <div class="input-field">
-                    <input type="email" id="email">
-                    <label for="email">Email</label>
-                  </div>
-                  <div class="input-field">
-                    <input type="password" id="password">
-                    <label for="password">Contraseña</label>
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <a href="#!" class="modal-action modal-close btn grey">
-                  <i class="fa fa-sync"></i> ¿Olvidaste tu contraseña?</a>
-                <a href="./loged.html" class="modal-action modal-close btn purple">
-                  <i class="fa fa-solid fa-user"></i>Ingresar</a>
-              </div>
-            </div>
-        </div>
-    </section>
-    
+  <nav class="purple darken-2">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">
+          <img src="./img/logo-unitools-nombre.png" alt="" width="140px">
+        </a>
+        <a href="#" data-activates="mobile-nav" class="button-collapse">
+          <i class="fa fa-bars"></i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a class="active-link white-text" href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="QuienSomos.html">Quien Somos?</a>
+          </li>
+          <li>
+            <a href="signup.html" >Registrate</a>
+          </li>
+          <li>
+            <a href="#login-modal" class="btn purple modal-trigger">Login</a>
+          </li>
+          <li>
+            <a href="https://facebook.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="side-nav" id="mobile-nav">
+          <h4 class="purple-text text-darken-4 center">UniTools</h4>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a href="index.html">
+              <i class="fa fa-home grey-text text-darken-4"></i> Inicio</a>
+          </li>
+          <li>
+            <a href="QuienSomos.html">
+              <i class="fa fa-cog grey-text text-darken-4"></i> Quien Somos?</a>
+          </li>
+          <li>
+            <a href="signup.html">
+              <i class="fa fa-users grey-text text-darken-4"></i>Registrate</a>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a href="./login-mobile.html" class="btn purple">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <div class="container">
+      <h4>Ingresa a tu cuenta</h4>
+      <p>Ingresa a tu cuenta de UniTools</p>
+        <form>
+          <div class="input-field">
+            <input type="email" id="email">
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="password">
+            <label for="password">Contraseña</label>
+          </div>
+
+          <a href="#!" class="btn grey btn-space">
+            <i class="fa fa-sync"></i> ¿Olvidaste tu contraseña?</a>
+          <a href="./loged.html" class="btn purple">
+            <i class="fa fa-solid fa-user"></i>Ingresar</a>
+
+        </form>
+    </div>
+
+    <!-- jQuery para modal de login-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.carousel.carousel-slider').carousel({ fullWidth: true });
+      $('.button-collapse').sideNav();
+      $('.modal').modal();
+    });
+  </script>
 </body>
 </html>
