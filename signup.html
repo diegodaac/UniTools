@@ -69,7 +69,7 @@
             </li>
             <li>
               <a href="signup.html">
-                <i class="fa fa-users grey-text text-darken-4"></i>Registrate</a>
+                <i class="fa fa-users grey-text text-darken-4"></i>Regístrate</a>
             </li>
             <li>
               <div class="divider"></div>
@@ -82,6 +82,7 @@
       </div>
     </nav>
     <!-- Showcase -->
+    <section class="section">
     <div class="showcase container">
       <div class="row">
         <div class="col s12 m10 offset-m1 center">
@@ -90,9 +91,10 @@
         </div>
       </div>
     </div>
+    </section>
   </header>
 
-  <!-- Seccion: Registrate -->
+  <!-- Sección: Regístrate -->
   <section class="section section-signup">
     <div class="container">
       <div class="row">
@@ -132,7 +134,7 @@
                   <option value="4">Cuarto</option>
                   <option value="5">Quinto</option>
                   <option value="6">Sexto</option>
-                  <option value="7">Septimo</option>
+                  <option value="7">Séptimo</option>
                   <option value="8">Octavo</option>
                   <option value="9">Noveno</option>
                 </select>
@@ -142,15 +144,15 @@
                 <select id="carrera">
                   <option value="" disabled selected>Selecciona tu carrera</option>
                   <option value="LLC">Ciencias Computacionales</option>
-                  <option value="LMAD">Multimedia y Animacion</option>
-                  <option value="LSTI">Seguridad en Tecnologias de la Informacion</option>
-                  <option value="LM">Matematicas</option>
-                  <option value="LF">Fisica</option>
+                  <option value="LMAD">Multimedia y Animación</option>
+                  <option value="LSTI">Seguridad en Tecnologías de la Información</option>
+                  <option value="LM">Matemáticas</option>
+                  <option value="LF">Física</option>
                   <option value="LA">Actuaria</option>
                 </select>
                 <label for="carrera">Carrera</label>
               </div>
-              <input type="submit" value="Registrame" class="btn btn-large purple btn-extend">
+              <input type="submit" value="Registrarme" class="btn btn-large purple btn-extend">
             </form>
           </div>
         </div>
@@ -159,12 +161,12 @@
   </section>
 
   <!-- Footer -->
-  <footer class="page-footer deep-purple lighten-1">
+  <footer class="page-footer deep-purple lighten-1 pie">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Sobre nosotros</h5>
-          <p class="grey-text text-lighten-4">Somo una comunidad estudiantil de la Facultad de Ciencias Fisico Matematicas que cree que todos deberiamos tener acceso a la educacion.</p>
+          <p class="grey-text text-lighten-4">Somo una comunidad estudiantil de la Facultad de Ciencias Físico Matemáticas que cree que todos deberíamos tener acceso a la educación.</p>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Links</h5>
@@ -176,7 +178,7 @@
               <a class="grey-text text-lighten-3" href="QuienSomos.html">Mas Sobre Nosotros</a>
             </li>
             <li>
-              <a class="grey-text text-lighten-3" href="signup.html">Registrate</a>
+              <a class="grey-text text-lighten-3" href="signup.html">Regístrate</a>
             </li>
 
           </ul>
@@ -186,11 +188,10 @@
     <div class="footer-copyright deep-purple darken-1">
       <div class="container">
         UniTools &copy; 2023
-        <a class="grey-text text-lighten-4 right" href="#!">Terminos y Condiciones</a>
+        <a class="grey-text text-lighten-4 right" href="#!">Términos y Condiciones</a>
       </div>
     </div>
   </footer>
-
 
   <!-- Login -->
   <div id="login-modal" class="modal">
@@ -216,16 +217,47 @@
     </div>
   </div>
 
+  <!-- Preloader -->
+  <div class="loader preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div> 
+
   <!-- jQuery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
-    $(document).ready(function () {
-      $('.carousel.carousel-slider').carousel({ fullWidth: true });
-      $('.button-collapse').sideNav();
-      $('.modal').modal();
-      $('select').material_select();
-    });
+    //Esconder Secciones para Loader
+    $('.section').hide();
+    $('.pie').hide();
+
+    setTimeout(function(){
+      $(document).ready(function () {
+        //Mostrar Secciones 
+        $('.section').fadeIn();
+        $('.pie').fadeIn();
+
+        //Esconder Preloader
+        $('.loader').fadeOut();
+
+        $('.carousel.carousel-slider').carousel({ fullWidth: true });
+        $('.button-collapse').sideNav();
+        $('.modal').modal();
+        $('select').material_select();
+      });
+
+    },1500 );
+
+    
   </script>
 </body>
 

@@ -330,7 +330,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="page-footer deep-purple lighten-1">
+  <footer class="page-footer deep-purple lighten-1 pie">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -408,11 +408,13 @@
   <script>
     //Esconder Secciones para Loader
     $('.section').hide();
+    $('.pie').hide();
 
     setTimeout(function(){
       $(document).ready(function () {
         //Mostrar Secciones 
         $('.section').fadeIn();
+        $('.pie').fadeIn();
 
         //Esconder Preloader
         $('.loader').fadeOut();

@@ -108,15 +108,46 @@
         </form>
     </div>
 
-    <!-- jQuery para modal de login-->
+    <!-- Preloader -->
+  <div class="loader preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- jQuery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
-    $(document).ready(function () {
-      $('.carousel.carousel-slider').carousel({ fullWidth: true });
-      $('.button-collapse').sideNav();
-      $('.modal').modal();
-    });
+    //Esconder Secciones para Loader
+    $('.container').hide();
+    $('.pie').hide();
+
+    setTimeout(function(){
+      $(document).ready(function () {
+        //Mostrar Secciones 
+        $('.container').fadeIn();
+        $('.pie').fadeIn();
+
+        //Esconder Preloader
+        $('.loader').fadeOut();
+
+        $('.carousel.carousel-slider').carousel({ fullWidth: true });
+        $('.button-collapse').sideNav();
+        $('.modal').modal();
+      });
+
+    },1500 );
+
+    
   </script>
 </body>
 </html>

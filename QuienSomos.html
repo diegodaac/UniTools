@@ -81,6 +81,7 @@
       </div>
     </nav>
     <!-- Showcase -->
+    <section class="section">
     <div class="showcase container">
       <div class="row">
         <div class="col s12 m10 offset-m1 center">
@@ -89,6 +90,7 @@
         </div>
       </div>
     </div>
+  </section>
   </header>
 
   <!-- Section: Que hacemos -->
@@ -196,7 +198,7 @@
 
 
   <!-- Footer -->
-  <footer class="page-footer deep-purple lighten-1">
+  <footer class="page-footer deep-purple lighten-1 pie">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -253,15 +255,46 @@
     </div>
   </div>
 
-  <!--jQuery-->
+  <!-- Preloader -->
+  <div class="loader preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- jQuery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
-    $(document).ready(function () {
-      $('.carousel.carousel-slider').carousel({ fullWidth: true });
-      $('.button-collapse').sideNav();
-      $('.modal').modal();
-    });
+    //Esconder Secciones para Loader
+    $('.section').hide();
+    $('.pie').hide();
+
+    setTimeout(function(){
+      $(document).ready(function () {
+        //Mostrar Secciones 
+        $('.section').fadeIn();
+        $('.pie').fadeIn();
+
+        //Esconder Preloader
+        $('.loader').fadeOut();
+
+        $('.carousel.carousel-slider').carousel({ fullWidth: true });
+        $('.button-collapse').sideNav();
+        $('.modal').modal();
+      });
+
+    },1500 );
+
+    
   </script>
 </body>
 
