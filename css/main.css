@@ -40,6 +40,14 @@
   color: #fff;
 }
 
+.main-header-inner-3 {
+  background: url(/img/library-books.jpg); /* FONDO */
+  background-size: cover;
+  background-position: bottom;
+  min-height: 350px;
+  color: #fff;
+}
+
 .main-header-inner-2 .showcase {
   padding-top: 50px;
 }
@@ -95,4 +103,15 @@
   .section-podcast {
     min-height: 240px;
   }
+}
+
+.loader{
+  position: absolute;
+  top: 40%;
+  left: 47%;
+}
+
+.img-size{
+  height: 212px;
+  width: 378px;
 }

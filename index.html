@@ -8,7 +8,8 @@
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/main.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UniTools</title>
+  <title> UniTools</title>
+  <link rel="icon" href="./img/Logos.png" type="image/icon type">
 </head>
 <body>
   <!-- Header -->
@@ -24,7 +25,7 @@
           </a>
           <ul class="right hide-on-med-and-down">
             <li>
-              <a class="active-link white-text" href="index.html">Inicio</a>
+              <a class="active-link white-text" href="../UniTools/index.html">Inicio</a>
             </li>
             <li>
               <a href="QuienSomos.html">Quien Somos?</a>
@@ -57,7 +58,7 @@
               <div class="divider"></div>
             </li>
             <li>
-              <a href="index.html">
+              <a href="../UniTools/index.html">
                 <i class="fa fa-home grey-text text-darken-4"></i> Inicio</a>
             </li>
             <li>
@@ -79,6 +80,7 @@
       </div>
     </nav>
     <!-- Showcase -->
+    <section class="section">
     <div class="showcase container">
       <div class="row">
         <div class="col s12 m10 offset-m1 center">
@@ -92,6 +94,8 @@
         </div>
       </div>
     </div>
+  </section>
+
   </header>
 
   <!-- Sección de Iconos -->
@@ -337,7 +341,7 @@
           <h5 class="white-text">Links</h5>
           <ul>
             <li>
-              <a class="grey-text text-lighten-3" href="index.html">Inicio</a>
+              <a class="grey-text text-lighten-3" href="../UniTools/index.html">Inicio</a>
             </li>
             <li>
               <a class="grey-text text-lighten-3" href="QuienSomos.html">Mas Sobre Nosotros</a>
@@ -383,15 +387,44 @@
     </div>
   </div>
 
-  <!-- jQuery para modal de login-->
+  <!-- Preloader -->
+  <div class="loader preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- jQuery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
-    $(document).ready(function () {
-      $('.carousel.carousel-slider').carousel({ fullWidth: true });
-      $('.button-collapse').sideNav();
-      $('.modal').modal();
-    });
+    //Esconder Secciones para Loader
+    $('.section').hide();
+
+    setTimeout(function(){
+      $(document).ready(function () {
+        //Mostrar Secciones 
+        $('.section').fadeIn();
+
+        //Esconder Preloader
+        $('.loader').fadeOut();
+
+        $('.carousel.carousel-slider').carousel({ fullWidth: true });
+        $('.button-collapse').sideNav();
+        $('.modal').modal();
+      });
+
+    },1500 );
+
+    
   </script>
 </body>
 </html>
