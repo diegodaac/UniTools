@@ -74,11 +74,11 @@
   background-position: center;
   border-top: #333 solid 5px;
   border-bottom: #333 solid 5px;
-  min-height: 160px;
+  min-height: 180px;
 }
 
 .section-podcast a {
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 .section-podcast .primary-overlay {
