@@ -9,11 +9,12 @@
 }
 
 .main-header {
-  background: url(../img/students-working-on-project.jpg); /* FONDO */
+  background: url(../img/students-OSCURO.png) ; /* FONDO */
   background-size: cover;
   background-position: center;
   min-height: 600px;
   color: #fff;
+  
 }
 
 .main-header .showcase {
