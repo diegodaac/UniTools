@@ -42,7 +42,7 @@
 }
 
 .main-header-inner-3 {
-  background: url(/img/library-books.jpg); /* FONDO */
+  background: url(../img/library-books.jpg); /* FONDO */
   background-size: cover;
   background-position: bottom;
   min-height: 350px;
@@ -50,7 +50,7 @@
 }
 
 .main-header-inner-4 {
-  background: url(/img/library-books-2.jpg); /* FONDO */
+  background: url(../img/library-books-2.jpg); /* FONDO */
   background-size: cover;
   background-position: bottom;
   min-height: 350px;
