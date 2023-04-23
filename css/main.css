@@ -9,11 +9,12 @@
 }
 
 .main-header {
-  background: url(../img/students-working-on-project.jpg); /* FONDO */
+  background: url(../img/students-OSCURO.png) ; /* FONDO */
   background-size: cover;
   background-position: center;
   min-height: 600px;
   color: #fff;
+  
 }
 
 .main-header .showcase {
@@ -82,11 +83,11 @@
   background-position: center;
   border-top: #333 solid 5px;
   border-bottom: #333 solid 5px;
-  min-height: 160px;
+  min-height: 180px;
 }
 
 .section-podcast a {
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 .section-podcast .primary-overlay {
