@@ -51,7 +51,15 @@
 }
 
 .main-header-inner-3 {
-  background: url(/img/library-books.jpg); /* FONDO */
+  background: url(../img/library-books.jpg); /* FONDO */
+  background-size: cover;
+  background-position: bottom;
+  min-height: 350px;
+  color: #fff;
+}
+
+.main-header-inner-4 {
+  background: url(../img/library-books-2.jpg); /* FONDO */
   background-size: cover;
   background-position: bottom;
   min-height: 350px;
@@ -70,6 +78,16 @@
 .section-developers {
   position: relative;
   background: url(../img/code.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top: #333 solid 5px;
+  border-bottom: #333 solid 5px;
+  min-height: 160px;
+}
+
+.section-noticias {
+  position: relative;
+  background: url(../img/event-venue.jpg);
   background-size: cover;
   background-position: center;
   border-top: #333 solid 5px;
