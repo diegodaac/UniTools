@@ -154,51 +154,55 @@
     </div>
   </section>
 
-<!-- FAQ -->
-<div class="slider">
-  <ul class="slides">
-    <!-- Slide 1 -->
-    <li>
-      <img src="./img/slide2.png">
-      <div class="caption left-align">
-        <h3>¿Qué tipo de trabajos puedo conseguir con un título en ciencias computacionales?</h3>
-        <Hay class="light grey-text text-lighten-3"> Hay una amplia gama de trabajos que puedes conseguir con un título en ciencias computacionales, desde desarrollador de software y analista de datos, hasta ingeniero de software y científico de datos. Las posibilidades son prácticamente infinitas y dependen de tus intereses y habilidades.</h5>
-      </div>
-    </li>
-      <!-- Slide 2 -->
+  <section>
+          <!-- FAQ -->
+    <div class="slider">
+      <ul class="slides">
+        <!-- Slide 1 -->
         <li>
-          <img src="./img/slide3.png">
-          <div class="caption center-align">
-            <h3>¿Qué habilidades son necesarias para estudiar ciencias computacionales?</h3>
-            <h5 class="light grey-text text-lighten-3">Las habilidades necesarias para estudiar ciencias computacionales incluyen un buen manejo de las matemáticas, la lógica, la capacidad de análisis, la resolución de problemas, la creatividad y la capacidad de trabajo en equipo.</h5>
+          <img src="./img/slide2.png">
+          <div class="caption left-align">
+            <h3>¿Qué tipo de trabajos puedo conseguir con un título en ciencias computacionales?</h3>
+            <Hay class="light grey-text text-lighten-3"> Hay una amplia gama de trabajos que puedes conseguir con un título en ciencias computacionales, desde desarrollador de software y analista de datos, hasta ingeniero de software y científico de datos. Las posibilidades son prácticamente infinitas y dependen de tus intereses y habilidades.</h5>
           </div>
         </li>
-      <!-- Slide 3 -->
-      <li>
-        <img src="./img/slide1.png">
-        <div class="caption right-align">
-          <h3>¿Es necesario tener conocimientos previos en programación para estudiar ciencias computacionales?</h3>
-          <h5 class="light grey-text text-lighten-3">No necesariamente. Si bien tener conocimientos previos en programación puede ayudar, muchas universidades ofrecen cursos introductorios de programación para estudiantes principiantes en el área de ciencias computacionales.</h5>
-        </div>
-      </li>
-      <!-- Slide 4 -->
-      <li>
-        <img src="./img/slide4.png">
-        <div class="caption center-align">
-          <h3>¿Qué lenguajes de programación son los más importantes para aprender?</h3>
-          <h5 class="light grey-text text-lighten-3">Los lenguajes de programación más importantes para aprender dependen de tus intereses y del tipo de trabajo que desees conseguir. Algunos de los lenguajes de programación más populares incluyen Java, Python, C++, Ruby y JavaScript.</h5>
-        </div>
-      </li>
-      <!-- Slide 5 -->
-      <li>
-        <img src="./img/slide5.png">
-        <div class="caption left-align">
-          <h3>¿Cómo puedo estar seguro de que esta carrera es para mí?</h3>
-          <h5 class="light grey-text text-lighten-3"> Puedes estar seguro de que esta carrera es para ti si te gustan las matemáticas, la lógica, la resolución de problemas, la tecnología y la creatividad. Además, puedes investigar más sobre la carrera, hablar con profesionales y estudiantes en el área, y considerar tomar algunos cursos introductorios antes de tomar una decisión definitiva.</h5>
-        </div>
-      </li>
-  </ul>
-</div>
+          <!-- Slide 2 -->
+            <li>
+              <img src="./img/slide3.png">
+              <div class="caption center-align">
+                <h3>¿Qué habilidades son necesarias para estudiar ciencias computacionales?</h3>
+                <h5 class="light grey-text text-lighten-3">Las habilidades necesarias para estudiar ciencias computacionales incluyen un buen manejo de las matemáticas, la lógica, la capacidad de análisis, la resolución de problemas, la creatividad y la capacidad de trabajo en equipo.</h5>
+              </div>
+            </li>
+          <!-- Slide 3 -->
+          <li>
+            <img src="./img/slide1.png">
+            <div class="caption right-align">
+              <h3>¿Es necesario tener conocimientos previos en programación para estudiar ciencias computacionales?</h3>
+              <h5 class="light grey-text text-lighten-3">No necesariamente. Si bien tener conocimientos previos en programación puede ayudar, muchas universidades ofrecen cursos introductorios de programación para estudiantes principiantes en el área de ciencias computacionales.</h5>
+            </div>
+          </li>
+          <!-- Slide 4 -->
+          <li>
+            <img src="./img/slide4.png">
+            <div class="caption center-align">
+              <h3>¿Qué lenguajes de programación son los más importantes para aprender?</h3>
+              <h5 class="light grey-text text-lighten-3">Los lenguajes de programación más importantes para aprender dependen de tus intereses y del tipo de trabajo que desees conseguir. Algunos de los lenguajes de programación más populares incluyen Java, Python, C++, Ruby y JavaScript.</h5>
+            </div>
+          </li>
+          <!-- Slide 5 -->
+          <li>
+            <img src="./img/slide5.png">
+            <div class="caption left-align">
+              <h3>¿Cómo puedo estar seguro de que esta carrera es para mí?</h3>
+              <h5 class="light grey-text text-lighten-3"> Puedes estar seguro de que esta carrera es para ti si te gustan las matemáticas, la lógica, la resolución de problemas, la tecnología y la creatividad. Además, puedes investigar más sobre la carrera, hablar con profesionales y estudiantes en el área, y considerar tomar algunos cursos introductorios antes de tomar una decisión definitiva.</h5>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </section>
+
+
 
 
 
@@ -457,12 +461,14 @@
     //Esconder Secciones para Loader
     $('.section').hide();
     $('.pie').hide();
+    $('.slider').hide();
 
     setTimeout(function(){
       $(document).ready(function () {
         //Mostrar Secciones 
         $('.section').fadeIn();
         $('.pie').fadeIn();
+        $('.slider').fadeIn();
 
         //Esconder Preloader
         $('.loader').fadeOut();
