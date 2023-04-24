@@ -25,6 +25,11 @@
   color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 
 .main-header .showcase {
   padding-top: 100px;
