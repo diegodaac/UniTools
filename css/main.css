@@ -76,6 +76,16 @@
   min-height: 160px;
 }
 
+.section-noticias {
+  position: relative;
+  background: url(../img/event-venue.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top: #333 solid 5px;
+  border-bottom: #333 solid 5px;
+  min-height: 160px;
+}
+
 .section-podcast {
   position: relative;
   background: url(../img/circuit.jpg);
