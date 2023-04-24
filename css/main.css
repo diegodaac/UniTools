@@ -17,6 +17,15 @@
   
 }
 
+.lcc-header {
+  background: url(../img/lcc1.png); /* FONDO */
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  color: #fff;
+}
+
+
 .main-header .showcase {
   padding-top: 100px;
 }
@@ -34,7 +43,7 @@
 }
 
 .main-header-inner-2 {
-  background: url(../img/classroom.jpg); /* FONDO */
+  background: url(../img/classroom_osc.png); /* FONDO */
   background-size: cover;
   background-position: center;
   min-height: 350px;
