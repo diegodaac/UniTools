@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/90264e9090.js" crossorigin="anonymous"></script>
+  <!--materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> UniTools</title>
+  <link rel="icon" href="./img/Logos.png" type="image/icon type">
+  <!-- Importar Materialize JS -->	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<!-- Inicializar el slider con Materialize -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+	    	var elems = document.querySelectorAll('.slider');
+	    	var options = {indicators: true, height: 400, transition: 500, interval: 6000};
+	    	var instances = M.Slider.init(elems, options);
+	  	});
+	</script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="lcc-header">
+    <nav class="transparent">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="./index.html" class="brand-logo">
+            <img src="./img/logo-unitools-nombre.png" alt="" width="150px">
+          </a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse">
+            <i class="fa fa-bars"></i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a class="active-link white-text" href="./index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="QuienSomos.html">Quiénes somos</a>
+            </li>
+            <li>
+              <a href="signup.html" >Regístrate</a>
+            </li>
+            <li>
+              <a href="#login-modal" class="btn purple modal-trigger">Login</a>
+            </li>
+            <li>
+              <a href="https://facebook.com">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="side-nav" id="mobile-nav">
+            <h4 class="purple-text text-darken-4 center">UniTools</h4>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li>
+              <a href="./index.html">
+                <i class="fa fa-home grey-text text-darken-4"></i> Inicio</a>
+            </li>
+            <li>
+              <a href="QuienSomos.html">
+                <i class="fa fa-cog grey-text text-darken-4"></i> Quiénes somos</a>
+            </li>
+            <li>
+              <a href="signup.html">
+                <i class="fa fa-users grey-text text-darken-4"></i>Regístrate</a>
+            </li>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li>
+              <a href="./login-mobile.html" class="btn purple">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Showcase -->
+    <section class="section">
+    <div class="showcase container">
+      <div class="row">
+        <div class="col s12 m10 offset-m1 center">
+          <h1>Licenciatura en Ciencias Computacionales</h1>
+          <p>¿Te gustaría ser parte de la revolución digital y estar en la vanguardia de la tecnología? Entonces estudiar ciencias computacionales es para ti.</p>
+          <br>
+          <br>
+          <a href="signup.html" class="btn btn-large purple white-text">Regístrate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </header>
+
+  <!-- Sección de Iconos -->
+  <section class="section section-icons center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="fa fa-user fa-3x deep-purple-text text-darken-2"></i>
+            <h5 class="grey-text text-darken-4">Comunidad</h5>
+            <p>La carrera de ciencias computacionales te permitirá desarrollar habilidades para diseñar, programar y crear soluciones tecnológicas innovadoras en diferentes campos. Desde la creación de aplicaciones móviles y videojuegos, hasta la automatización de procesos en empresas y la seguridad cibernética.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="fa fa-book-open-reader fa-3x deep-purple-text text-darken-2"></i>
+            <h5 class="grey-text text-darken-4">Materiales</h5>
+            <p>Estudiar ciencias computacionales te permitirá entrar a un mundo lleno de desafíos y oportunidades, donde tendrás la posibilidad de ser parte de equipos multidisciplinarios, trabajar en proyectos desafiantes y estar en constante aprendizaje. Además, tendrás la oportunidad de trabajar en empresas líderes en tecnología, startups y emprendimientos propios.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="fa-sharp fa-solid fa-comments fa-3x deep-purple-text text-darken-2"></i>
+            <h5 class="grey-text text-darken-4">Experiencias</h5>
+            <p>En la actualidad, la demanda de profesionales en ciencias computacionales es muy alta y sigue en aumento. Las empresas buscan constantemente talentos con habilidades en áreas como la inteligencia artificial, el aprendizaje automático, la ciberseguridad y la nube.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ser LCC  -->
+  <section class="section section-about grey lighten-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <h3>
+            <span class="deep-purple-text text-darken-1">Ser</span> LCC</h3>
+          <p class="flow-text">La carrera de ciencias computacionales ofrece una gran variedad de opciones de empleo, además de la oportunidad de crear soluciones tecnológicas innovadoras que pueden tener un impacto positivo en la sociedad. Únete a la revolución digital estudiando ciencias computacionales y conviértete en parte del cambio tecnológico.</p>
+        </div>
+        <div class="col s12 m6">
+          <img src="./img/serlcc.jpg" alt="" class="circle responsive-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+          <!-- FAQ -->
+    <div class="slider">
+      <ul class="slides">
+        <!-- Slide 1 -->
+        <li>
+          <img src="./img/slide2.png">
+          <div class="caption left-align">
+            <h3>¿Qué tipo de trabajos puedo conseguir con un título en ciencias computacionales?</h3>
+            <Hay class="light grey-text text-lighten-3"> Hay una amplia gama de trabajos que puedes conseguir con un título en ciencias computacionales, desde desarrollador de software y analista de datos, hasta ingeniero de software y científico de datos. Las posibilidades son prácticamente infinitas y dependen de tus intereses y habilidades.</h5>
+          </div>
+        </li>
+          <!-- Slide 2 -->
+            <li>
+              <img src="./img/slide3.png">
+              <div class="caption center-align">
+                <h3>¿Qué habilidades son necesarias para estudiar ciencias computacionales?</h3>
+                <h5 class="light grey-text text-lighten-3">Las habilidades necesarias para estudiar ciencias computacionales incluyen un buen manejo de las matemáticas, la lógica, la capacidad de análisis, la resolución de problemas, la creatividad y la capacidad de trabajo en equipo.</h5>
+              </div>
+            </li>
+          <!-- Slide 3 -->
+          <li>
+            <img src="./img/slide1.png">
+            <div class="caption right-align">
+              <h3>¿Es necesario tener conocimientos previos en programación para estudiar ciencias computacionales?</h3>
+              <h5 class="light grey-text text-lighten-3">No necesariamente. Si bien tener conocimientos previos en programación puede ayudar, muchas universidades ofrecen cursos introductorios de programación para estudiantes principiantes en el área de ciencias computacionales.</h5>
+            </div>
+          </li>
+          <!-- Slide 4 -->
+          <li>
+            <img src="./img/slide4.png">
+            <div class="caption center-align">
+              <h3>¿Qué lenguajes de programación son los más importantes para aprender?</h3>
+              <h5 class="light grey-text text-lighten-3">Los lenguajes de programación más importantes para aprender dependen de tus intereses y del tipo de trabajo que desees conseguir. Algunos de los lenguajes de programación más populares incluyen Java, Python, C++, Ruby y JavaScript.</h5>
+            </div>
+          </li>
+          <!-- Slide 5 -->
+          <li>
+            <img src="./img/slide5.png">
+            <div class="caption left-align">
+              <h3>¿Cómo puedo estar seguro de que esta carrera es para mí?</h3>
+              <h5 class="light grey-text text-lighten-3"> Puedes estar seguro de que esta carrera es para ti si te gustan las matemáticas, la lógica, la resolución de problemas, la tecnología y la creatividad. Además, puedes investigar más sobre la carrera, hablar con profesionales y estudiantes en el área, y considerar tomar algunos cursos introductorios antes de tomar una decisión definitiva.</h5>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- Sección Carreras -->
+  <section class="section section-language grey lighten-4">
+    <div class="container">
+      <div class="row">
+        <h4 class="center">Apoyo para 
+          <span class="deep-purple-text text-darken-1"> todas las carreras</span>
+        </h4>
+        <br>
+        <br>
+        <!-- CARTAS DE CARRERAS -->
+        <div class="row">
+          <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/computer-science.jpg" alt="">
+              <span class="card-title">Ciencias Computacionales</span>
+            </div>
+            <div class="card-content">
+              <p>Si eres nuevo en el mundo de la programación aquí encontrarás todo tipo de recursos para comenzar y mejorar tus habilidades</p>
+            </div>
+            <div class="card-action">
+              <a href="https://www.youtube.com/watch?v=SJB6ufGWo5A" class="purple-text">Más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/digital-illustrator-animator.jpg" alt="">
+              <span class="card-title">Multimedia y Animación Digital</span>
+            </div>
+            <div class="card-content">
+              <p>Si tu pasión es el dibujo y la animación aquí encontraras miles de ejemplos y tutoriales para que puedas potenciar tus habilidades y seguir creciendo como animador</p>
+            </div>
+            <div class="card-action">
+              <a href="" class="purple-text">Más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/tecnologia-seguridad.jpg" alt="">
+              <span class="card-title">Seguridad en Tecnologías de la Información</span>
+            </div>
+            <div class="card-content">
+              <p>Si te interesa el mundo de la ciberseguridad y el hacking ético aquí encontraras recursos y videos para que puedas seguir desarrollando tus conocimientos </p>
+            </div>
+            <div class="card-action">
+              <a href="" class="purple-text">Más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/Matematicas.jpg" alt="">
+              <span class="card-title">Matemáticas</span>
+            </div>
+            <div class="card-content">
+              <p>Los recursos de matemáticas ofrecen materiales de estudio y ejemplos para ayudarte a profundizar la comprensión de los conceptos matemáticos.</p>
+            </div>
+            <div class="card-action">
+              <a href="" class="purple-text">Más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/physics.jpg" alt="">
+              <span class="card-title">Física</span>
+            </div>
+            <div class="card-content">
+              <p>Los recursos de física ofrecen materiales de estudio y las últimas investigaciones para ayudarte a entender mejor los conceptos y teorías físicas, y conectarte con otros estudiantes y expertos en línea.</p>
+            </div>
+            <div class="card-action">
+              <a href="" class="purple-text">Más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/actuaria.jpg" alt="">
+              <span class="card-title">Actuaria</span>
+            </div>
+            <div class="card-content">
+              <p>Los recursos de Actuaría proporcionan herramientas de estudio para comprender los conceptos matemáticos y estadísticos de la gestión de riesgos en seguros y finanzas.</p>
+            </div>
+            <div class="card-action">
+              <a href="" class="purple-text">Más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Blog -->
+  <section class="section section-podcast white-text">
+    <div class="primary-overlay valign-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m8">
+            <h4>Comparte tus experiencias</h4>
+            <p>Si eres un estudiante a punto de graduarte tomate el tiempo y escribe consejos o tips para los estudiantes de nuevo ingreso</p>
+          </div>
+          <div class="col s12 m4">
+            <a href="#" class="btn purple btn-large">
+              <i class="fa fa-podcast"></i> TIPS
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Testimonios -->
+  <section class="section section-testimonial grey lighten-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="carousel carousel-slider center" style="user-select: non
+           !important;">
+            <div class="carousel-item" href="#one!">
+              <h2>Opiniones</h2>
+              <p class="flow-text">"En UniTools, puedo encontrar una gran cantidad de material de estudio, incluyendo apuntes de clases, tutoriales, ejemplos de código y ejercicios prácticos. También puedo acceder a foros y comunidades en línea donde puedo hacer preguntas y obtener respuestas de otros estudiantes y maestros."
+                <p>
+                  <em>- Diego Alvarado</em>
+                </p>
+              </p>
+              <div class="carousel-fixed-item center hide-on-small-and-down">
+                <a href="#" class="btn purple">Leer mas</a>
+              </div>
+            </div>
+            <div class="carousel-item" href="#two!">
+              <h2>Opiniones</h2>
+              <p class="flow-text">"UniTools me brinda acceso a una gran cantidad de materiales de estudio, como videos de conferencias, simulaciones y ejemplos de problemas resueltos. También puedo encontrar información sobre las últimas investigaciones en física, lo que me permite estar al día con los avances más recientes en mi campo."
+                <p>
+                  <em>- Max Zermeño</em>
+                </p>
+              </p>
+              <div class="carousel-fixed-item center hide-on-small-and-down">
+                <a href="#" class="btn purple">Leer Mas</a>
+              </div>
+            </div>
+            <div class="carousel-item" href="#three!">
+              <h2>Opiniones</h2>
+              <p class="flow-text">"En UniTools, puedo encontrar una amplia gama de material de estudio, como tutoriales, ejemplos de problemas resueltos, y prácticas de exámenes. También puedo encontrar aplicaciones y software matemático que me permiten hacer cálculos y visualizaciones complejas de manera más rápida y eficiente."
+                <p>
+                  <em>- Mariana Garza</em>
+                </p>
+              </p>
+              <div class="carousel-fixed-item center hide-on-small-and-down">
+                <a href="#" class="btn purple">Leer Mas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="page-footer deep-purple lighten-1 pie">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Sobre nosotros</h5>
+          <p class="grey-text text-lighten-4">Somo una comunidad estudiantil de la Facultad de Ciencias Físico Matemáticas que cree que todos deberíamos tener acceso a la educación.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-3" href="../UniTools/index.html">Inicio</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="QuienSomos.html">Mas Sobre Nosotros</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="signup.html">Regístrate</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright deep-purple darken-1">
+      <div class="container">
+        UniTools &copy; 2023
+        <a class="grey-text text-lighten-4 right" href="#!">Términos y Condiciones</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Login -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <h4>Ingresa a tu cuenta</h4>
+      <p>Ingresa a tu cuenta de UniTools</p>
+      <form>
+        <div class="input-field">
+          <input type="email" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password">
+          <label for="password">Contraseña</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close btn grey">
+        <i class="fa fa-sync"></i> ¿Olvidaste tu contraseña?</a>
+      <a href="./loged.html" class="modal-action modal-close btn purple">
+        <i class="fa fa-solid fa-user"></i>Ingresar</a>
+    </div>
+  </div>
+
+  <!-- Preloader -->
+  <div class="loader preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    //Esconder Secciones para Loader
+    $('.section').hide();
+    $('.pie').hide();
+    $('.slider').hide();
+
+    setTimeout(function(){
+      $(document).ready(function () {
+        //Mostrar Secciones 
+        $('.section').fadeIn();
+        $('.pie').fadeIn();
+        $('.slider').fadeIn();
+
+        //Esconder Preloader
+        $('.loader').fadeOut();
+
+        $('.carousel.carousel-slider').carousel({ fullWidth: true });
+        $('.button-collapse').sideNav();
+        $('.modal').modal();
+      });
+
+    },1500 );
+
+    
+  </script>
+</body>
+</html>
